@@ -3,6 +3,7 @@
 echo "source ~/bashtools/.enviroment.sh" >> ~/.bashrc
 echo "source ~/bashtools/.alias.sh" >> ~/.bashrc
 echo "source ~/bashtools/.searchtoolkit.sh" >> ~/.bashrc
+echo "source ~/bashtools/.gittools.sh" >> ~/.bashrc
 
 echo "set completion-ignore-case on" >> ~/.inputrc
 
