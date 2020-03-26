@@ -26,4 +26,18 @@ function searchin(){
     else
       grep -rniI --color --exclude='*.log' -E $1 2>/dev/null
     fi 
+}
+
+function searchandrescue(){
+  find ./ -iname "*$1*" 2 > /dev/null
+  file_list=$(find ./ -iname "*$1*" 2 > /dev/null)
+  echo
+  for file in $file_list
+  do
+    echo -e "\e[1;95m$file\e[0m"
+    grep -ni --color $2 $file 2 > /dev/null
+    echo
+  done
+}
+}
 #insert my searchin function here somewhere
