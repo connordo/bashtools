@@ -6,7 +6,7 @@ echo -e "\033[2m 2 -- Dim\033[0m"
 echo -e "\033[3m 3 -- Italics\033[0m"
 echo -e "\033[4m 4 -- Underline\033[0m"
 echo -e "\033[5m 5 -- Blink\033[0m"
-echo -e "\033[7m 7 -- Normal\033[0m"
+echo -e "\033[7m 7 -- Backlit\033[0m"
 echo -e "\033[8m 8 -- Inivisible\033[0m"
 echo -e "\033[9m 9 -- Strikethrough\033[0m"
 
