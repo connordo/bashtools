@@ -26,6 +26,7 @@ function searchin(){
     else
       grep -rniI --color --exclude='*.log' -E $1 2>/dev/null
     fi 
+  fi
 }
 
 function searchandrescue(){
