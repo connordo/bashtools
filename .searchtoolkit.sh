@@ -13,7 +13,7 @@ function searchin(){
   fi
   if [[ $1 == "-a" ]]
   then
-    if[ "$#" -eq 3 ]
+    if [ "$#" -eq 3 ]
     then
       grep --context=5 -rniI --color --exclude='*.log' -E $2.*$3\|$3.*$2 2>/dev/null
     else
@@ -38,6 +38,5 @@ function searchandrescue(){
     grep -ni --color $2 $file 2 > /dev/null
     echo
   done
-}
 }
 #insert my searchin function here somewhere
